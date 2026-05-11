@@ -35,7 +35,7 @@ jobs:
 
       - name: Run pylint
         run: |
-          pylint mkdocs_cdoc
+          pylint mkdocs_cdoc --fail-under=9.0
 
       - name: Run mypy
         run: |
