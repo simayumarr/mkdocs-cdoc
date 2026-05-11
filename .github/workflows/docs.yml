@@ -37,7 +37,8 @@ jobs:
 
       # Build the project documentation site
       - name: Build documentation site
-        run: mkdocs build -f mkdocs-site.yml -d _site
+        run: |
+          mkdocs build -f mkdocs.yml -d _site
 
       # Build the example project and embed it under _site/example-site/
       - name: Build example project
